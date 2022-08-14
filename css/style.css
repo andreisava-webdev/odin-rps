@@ -1,0 +1,89 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* CUSTOM PROPERTIES */
+:root {
+  /* Colors */
+  --clr-bg-color: #fee1c7;
+  --clr-primary: #247ba0;
+  --clr-success: #06d6a0;
+}
+
+/* UTILITY CLASSES */
+.btn {
+  border: none;
+  border-radius: 10px;
+  color: var(--clr-bg-color);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 40px;
+  transition: all 0.4s;
+  width: 120px;
+}
+
+.btn:hover:enabled {
+  transform: scale(1.1);
+}
+
+.btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.btn:disabled
+
+/* UNIVERSAL STYLES */
+html {
+  font-family: "Electrolize", sans-serif;
+}
+
+body {
+  align-items: center;
+  background-color: var(--clr-bg-color);
+  color: var(--clr-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+}
+
+/* CLASS STYLES */
+.new-game-btn {
+  background-color: var(--clr-success);
+}
+
+.score {
+  display: flex;
+  font-size: 1.4rem;
+  gap: 10px;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.rock-btn {
+  background-color: #8aa39b;
+}
+
+.paper-btn {
+  background-color: #e58f65;
+}
+
+.scissors-btn {
+  background-color: #b2abf2;
+}
+
+/* HIDDEN CLASS */
+.hidden {
+  display: none;
+}
