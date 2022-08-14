@@ -91,7 +91,7 @@ function checkGameWinner() {
 }
 
 function startNewGame() {
-  if (window.confirm("Are you sure you want to start a new game?")) {
+  if (Window.confirm("Are you sure you want to start a new game?")) {
     showPlayerScore.textContent = 0;
     showComputerScore.textContent = 0;
     gameBtns.forEach((btn) => {
