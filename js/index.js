@@ -71,7 +71,9 @@ function game() {
   for (let i = 0; i < 5; i++) {
     console.log(`Round ${i + 1}!`);
 
-    const playerChoice = prompt("Choose Rock, Paper or Scissors").toLowerCase();
+    const playerChoice = Window.prompt(
+      "Choose Rock, Paper or Scissors"
+    ).toLowerCase();
     const computerChoice = getComputerChoice();
     console.log(`Player Choice: ${playerChoice}`);
     console.log(`Computer Choice: ${computerChoice}`);
